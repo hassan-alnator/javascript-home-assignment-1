@@ -37,6 +37,10 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 Make sure to include all source code in the repository.
 
+### Plus Points
+ - using redux.
+ - writing unit tests.
+
 ### CodeSubmit
 
 Please organize, design, test, and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
