@@ -1,0 +1,19 @@
+.btn {
+    padding: 1rem 2rem;
+    white-space: nowrap;
+    outline: none;
+
+    &.primary-cta {
+      color: map.get($colors, "white");;
+      background-color: map.get($colors, "primary" , "cyan");
+      border: solid 1px map.get($colors, "primary" , "cyan");
+      &:active, &:hover {
+        background-color: map.get($colors, "white");;
+        color: map.get($colors, "primary" , "cyan");
+        border-color: map.get($colors, "primary" , "cyan");
+        transition: .5s;
+        box-shadow: none;
+      }
+      
+    }
+  }
