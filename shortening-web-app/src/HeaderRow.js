@@ -6,7 +6,7 @@ function HeaderRow() {
         <div className="container pb-5">
             <div className="row">
                 <div className='d-flex flex-column-reverse flex-md-row p-0 p-md-3'>
-                    <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center gap-3 px-3">
+                    <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start gap-3 px-3">
                         <div className="col-12 d-flex flex-column gap-2">
                             <h1 className='m-0'>
                                 More than just shorter links

@@ -39,7 +39,7 @@ function Statistics() {
   return (
     <div className='container py-5'>
         <div className={lastFiveUrls.length === 0 ? 'py-5 mt-5 d-block d-md-none' : 'py-5 d-block d-md-none' }></div>
-            {lastFiveUrls && lastFiveUrls.length > 0 && (
+            {lastFiveUrls && lastFiveUrls.length > 0 && lastFiveUrls[0].longUrl !== '...' && (
                 <ul className='list-unstyled d-flex flex-column gap-3 pt-5 mt-5'>
                 {lastFiveUrls.map((url, index) => (
                     <li key={index}>
