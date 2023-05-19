@@ -1,0 +1,48 @@
+.shorten-links {
+    a {
+      text-decoration: none;
+      color: map.get($colors, "primary" , "dark-violet");
+
+      &:hover {
+        transition: .3s;
+        color: map.get($colors, "primary" , "dark-violet-hover");
+      }
+
+      &.active {
+        color: map.get($colors, "primary" , "cyan");
+        &:hover {
+          color: map.get($colors, "primary" , "cyan-hover");
+        }
+      }
+    }
+
+    
+    button {
+      min-width: 100px;
+      padding: 1rem;
+
+      &.copied {
+        background-color: map.get($colors, "primary" , "dark-violet");
+        color: map.get($colors, "white");
+        border: none;
+      }
+    }
+    
+  }
+
+  .long-url {
+    @media (max-width: 576px){
+      border-bottom: solid 1px #ccc;
+      padding-bottom: 8px;
+      width: 100%;
+    }
+  }
+
+  .shortening-url {
+    border-radius: 0.75rem;
+    position: absolute;
+    width: 100%;
+    margin-top: -50px;
+    background: map.get($colors, "primary" , "dark-violet") url("./../images/bg-shorten-desktop.svg") no-repeat center center;
+    background-size: cover;
+  }

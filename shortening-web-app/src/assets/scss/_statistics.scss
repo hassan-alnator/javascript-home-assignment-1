@@ -1,0 +1,61 @@
+
+.statistics-cards {
+    .statistics-card {
+      background-color: map.get($colors, "white");;
+      padding: 5rem 2rem 2rem;
+      font-size: 16px;
+
+      @media (max-width: 576px) {
+        text-align: center;
+      }
+
+      .card-icon {
+        position: absolute;
+        top: -25px;
+        left: 2rem;
+        background: map.get($colors, "primary" , "dark-violet");
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 576px) {
+          left: calc(50% - 55px);
+          
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+      &:nth-child(3) {
+        margin-top: 100px;
+        
+        @media (max-width: 567px) {
+          margin-top: 50px;
+        }
+      }
+      .statistics-card-title,.statistics-card-subtitle {
+        margin: 0;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 7px;
+      background-color: map.get($colors, "primary" , "cyan");
+      position: absolute;
+      top: 45%;
+      z-index: -1;
+
+      @media (max-width: 567px) {
+        width: 7px;
+        height: 90%;
+        left: 45%;
+        top: 50px;
+      }
+    }
+  }

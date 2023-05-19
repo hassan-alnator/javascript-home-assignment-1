@@ -1,0 +1,26 @@
+header {
+    background-color: map.get($colors, "white");
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        
+        &:focus{
+          box-shadow: none;
+        }
+      }
+      .navbar-menu {
+        left: 1rem;
+        right: 1rem;
+        background-color: map.get($colors, "primary" , "dark-violet");;
+        color: map.get($colors, "white");
+    
+        .nav-item {
+          width: 100%;
+          text-align: center;
+    
+          .nav-link {
+            font-weight: bold;
+          }
+        }
+      }  
+}
